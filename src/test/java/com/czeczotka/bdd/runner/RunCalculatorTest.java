@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        format={"json:target/cucumber/cucumber.json"}
+        format={"json:target/cucumber/cucumber.json"},
         glue = "com.czeczotka.bdd.steps",
         features = "classpath:cucumber/calculator.feature"
 )
